@@ -35,12 +35,12 @@ What is special about unittests?
 We treat unit tests as a tool to control program structure. They must 
 fail early and indicate what has changed in the code under test. 
 
-Unittests are 'example tests', it is often costly to use them 
-to validate inteded program behaviour. Even with a lot of unittests validation 
+Unittests are 'example tests', it is costly to use them 
+to validate program behaviour. Even with a lot of unittests validation 
 is never complete. 
 
-The best way forward is to have limited amount of test cases, skillfully 
-designed around expected output and most probable risks.  
+Limited amount of test cases,  
+designed around expected output and most probable risks are best for unittests.   
 
 Checklist
 ----------
