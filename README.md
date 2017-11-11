@@ -50,8 +50,8 @@ Best tests:
 2. use a continious integration like Travis CI and use coverage metrics like codecov 
 3. cover at least all public methods/functions
 4. have long names with context and expected result (except very short tests)
-5. are as simple and readable as they can get
-6. one test tests one thing and preferably has one assert per test
+5. are as simple and readable as they can get, nobody can simplify them further
+6. one test tests one thing and has one assert per test
 7. have clear separation of setup, call of code under test and result check 
 8. make good use of test class inheritance, parametrisation, factories/fixtures, dependency injection, mocks and monkey-patching
 9. concentrate around practical risks in program execution, not fantasy situations  
@@ -59,6 +59,9 @@ Best tests:
 11. fail early and near to where problem is
 12. assembled by testcases (one testclass class for every single class in code under test)
 
+Your tests are at risk, if:
+- [ ] they have more than 5-7 lines
+- [ ] a strange cannot write a similar test just by knowing a test method name
 
 Learning
 --------
