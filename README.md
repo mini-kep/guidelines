@@ -39,8 +39,13 @@ Unittests are 'example tests', it is costly to use them
 to validate program behaviour. Even with a lot of unittests validation 
 is never complete. 
 
-Limited amount of test cases,  
-designed around expected output and most probable risks are best for unittests.   
+Limited amount of test cases designed around expected output 
+and most probable risks are best for unittests.   
+
+You can make tests more exaustive one can use parametrisation/randomisation, and 
+swithichig to other kinds of tests like integration/acceptance tests. These types of tests 
+are different from unittests, even though use similar libraries. 
+Beware of [dirty hybrids](http://blog.stevensanderson.com/2009/08/24/writing-great-unit-tests-best-and-worst-practises).
 
 Checklist
 ----------
