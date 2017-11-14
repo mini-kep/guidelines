@@ -112,8 +112,7 @@ Reading:
 
 To add 
 --------
-- 'dirty hybrids'
-- testing is not the best technique to ensure code quality (eg reviews)
+- testing is not the best technique to ensure code quality (eg reviews - design)
 
 Prior discussions
 -----------------
