@@ -1,7 +1,7 @@
 Testing guidelines
 ==================
 
-These guidelines cover unit tests (being) developped at various parts of ```mini-kep``` project.
+These guidelines cover unit tests being developped at various parts of ```mini-kep``` project.
 
 Here we do not describe functional (eg selenium) or load tests, which may have slightly different logic. 
 
@@ -15,18 +15,18 @@ When testing one must think of:
 a) program behaviours
 - how the code under test is supposed to run well 
 - how the code under test may run with error
-- how to expose behaviours above in test setup and checks?
+- how to simulate good and bad behaviours in test setup and checks?
 - what happens in program outside code under test?
 
 b) clean tests
 - how to write test in a clean and understandable fashion? 
-- how to name tests better?
+- how to name tests?
 - how to make tests small?
 
 c) test efficiency
 - what conditions/arguements/contexts are most probable for the code under test?
-- what should I test for first?
-- how would readers inderstand what the code does?
+- what if the first thing should I test for?
+- how would readers inderstand what the test code does?
 
 
 What is special about unittests?
@@ -36,15 +36,15 @@ We treat unit tests as a tool to control program structure. They must
 fail early and indicate what has changed in the code under test. 
 
 Unittests are 'example tests', it is costly to use them 
-to validate program behaviour. Even with a lot of unittests validation 
-is never complete. 
+to validate all program behaviour. Even with a lot of unittests 
+validation is never complete. 
 
 Limited amount of test cases designed around expected output 
 and most probable risks are best for unittests.   
 
-You can make tests more exaustive one can use parametrisation/randomisation, and 
-swithichig to other kinds of tests like integration/acceptance tests. These types of tests 
-are different from unittests, even though use similar libraries. 
+You can make tests more exaustive, eg use parametrisation/randomisation or 
+swithichig to other kinds of tests like integration/acceptance tests. 
+These types of tests are different from unittests, even though may use similar libraries. 
 
 Beware of [dirty hybrids](http://blog.stevensanderson.com/2009/08/24/writing-great-unit-tests-best-and-worst-practises).
 
@@ -64,10 +64,10 @@ Best tests:
 10. include just a few integration, end-to-end tests
 11. fail early and near to where problem is
 12. assembled by testcases (one testclass class for every single class in code under test)
-13. are isolated  one from another
+13. are isolated one from another
 
 Your tests are at risk, if:
-- [ ] they have more than 5-7 lines of code for a simale task
+- [ ] they have more than 5-7 lines of code for a small task
 - [ ] a stranger cannot write a similar test just by knowing a test name
 
 Learning
