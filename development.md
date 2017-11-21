@@ -24,3 +24,20 @@ Examples:
 - ```dev-compress-dataset-71```
 - ```fix-large-dataset-fault-10```
 - ```test-csv-serialialiser-2```
+
+# Github
+
+Github avatar and username are very personal things, this part of guidelines 
+not mandatory, but it makes life easier, if:
+
+- avatar is distiguishable from others:
+  - not a standard avtar, like all others
+  - not a greyish/brownish picture, like all others
+  
+- username has some association to who you are, unless disambiguation is intentional
+
+- a memorable and short username is better
+  
+ 
+  
+  
