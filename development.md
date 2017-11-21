@@ -27,8 +27,8 @@ Examples:
 
 # Github identity
 
-Github avatar and username are very personal things, so this part of guidelines 
-not mandatory, but it makes life easier, if:
+Github avatar and username are very personal things, 
+but it (subjectively) makes life easier, if:
 
 - avatar is distiguishable from others:
   - not a standard avtar, like all others
@@ -36,8 +36,5 @@ not mandatory, but it makes life easier, if:
   
 - username has some association to who you are, unless disambiguation is intentional
 
-- a memorable, short and easy to type username is better
-  
- 
-  
+- a memorable, short and easy to type username is better  
   
