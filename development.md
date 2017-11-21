@@ -25,9 +25,9 @@ Examples:
 - ```fix-large-dataset-fault-10```
 - ```test-csv-serialialiser-2```
 
-# Github
+# Github identity
 
-Github avatar and username are very personal things, this part of guidelines 
+Github avatar and username are very personal things, so this part of guidelines 
 not mandatory, but it makes life easier, if:
 
 - avatar is distiguishable from others:
