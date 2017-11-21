@@ -25,7 +25,7 @@ Examples:
 - ```fix-large-dataset-fault-10```
 - ```test-csv-serialialiser-2```
 
-# Github identity
+# Github identity suggestions
 
 Github avatar and username are very personal things, 
 but it (subjectively) makes life easier, if:
