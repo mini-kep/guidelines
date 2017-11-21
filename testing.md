@@ -1,9 +1,9 @@
 Testing guidelines
 ==================
 
-These guidelines cover unit tests being developped at various parts of ```mini-kep``` project.
+These guidelines cover unit tests in ```mini-kep``` project.
 
-Here we do not describe functional (eg selenium) or load tests, which may have slightly different logic. 
+Here we do not describe functional (eg selenium) or load tests, which may have different logic. 
 
 Introduction
 ------------
@@ -39,14 +39,19 @@ Unittests are 'example tests', it is costly to use them
 to validate all program behaviour. Even with a lot of unittests 
 validation is never complete. 
 
-Limited amount of test cases designed around expected output 
-and most probable risks are best for unittests.   
+Design your unit tests around:
+   - method/function interface  
+   - primitive success outcomes
+   - propaple risks in program excution
+  
+You can make tests more exaustive by using parametrisation/randomisation 
+of unttests or swithiching to integration/acceptance tests. 
+These types of tests are different from unittests, even though may 
+use similar libraries. 
 
-You can make tests more exaustive, eg use parametrisation/randomisation or 
-swithichig to other kinds of tests like integration/acceptance tests. 
-These types of tests are different from unittests, even though may use similar libraries. 
-
-Beware of [dirty hybrids](http://blog.stevensanderson.com/2009/08/24/writing-great-unit-tests-best-and-worst-practises).
+Beware of [dirty hybrids](http://blog.stevensanderson.com/2009/08/24/writing-great-unit-tests-best-and-worst-practises) - 
+tests that are stuck in the middle of unit test and integration test. They ususaly require complex setup and 
+complex checks, and very hard to maintain. You should not do such tests, unless you have a special reason.  
 
 Checklist
 ----------
@@ -55,7 +60,10 @@ Best tests:
 1. run quick and often
 2. use a continious integration like Travis CI and use coverage metrics like codecov 
 3. cover at least all public methods/functions
-4. have long names with context and expected result ```test_WHAT_on_WHAT_does_SOMETHING```(except very short tests)
+4. have long names based on a pattern ```test_<WHAT1>_on_<WHAT2>_<DOES_WHAT>```:
+   - `<WHAT1>` name of function/method under test
+   - `<WHAT2>` context/condition or arguments 
+   - `<DOES_WHAT>` expected result or behaviour 
 5. are as simple and readable as they can get, nobody can simplify them further
 6. one test addresses one issue and has one assert per test
 7. have clear separation of setup, call of code under test and result check 
@@ -63,11 +71,11 @@ Best tests:
 9. concentrate around practical risks in program execution, not fantasy situations  
 10. include just a few integration, end-to-end tests
 11. fail early and near to where problem is
-12. assembled by testcases (one testclass class for every single class in code under test)
+12. assembled by testcases: one testclass class for every single class in code under test
 13. are isolated one from another
 
 Your tests are at risk, if:
-- [ ] they have more than 5-7 lines of code for a small task
+- [ ] they have more than 5-7 lines of code 
 - [ ] a stranger cannot write a similar test just by knowing a test name
 
 Learning
@@ -91,7 +99,6 @@ Tests have to be named properly and clearly tell:
 - what function or method is tested
 - what input or context is given
 - what is the expected result or behaviour
-
 
 ```
 [the name of the tested method]_[expected input / tested state]_[expected behavior]
@@ -129,4 +136,4 @@ I got lots of  professional advice specifically in testing from:
 - [Alexey Kryukov](https://www.upwork.com/fl/alexey) 
 - [Eduard Bagrov - SYP Agency](https://www.upwork.com/freelancers/~01ce161462df65feaa) 
 
-These people are highly recommended to work with. 
+These people are highly recommended to work with on testing issues. 
