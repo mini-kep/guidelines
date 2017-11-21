@@ -36,7 +36,7 @@ not mandatory, but it makes life easier, if:
   
 - username has some association to who you are, unless disambiguation is intentional
 
-- a memorable and short username is better
+- a memorable, short and easy to type username is better
   
  
   
