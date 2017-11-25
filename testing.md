@@ -56,7 +56,7 @@ complex checks, and very hard to maintain. You should not do such tests, unless 
 Checklist
 ----------
 
-### Recommendations:
+#### Recommendations:
 
 - run quick and often
 - use a continious integration like Travis CI and use coverage metrics like codecov 
