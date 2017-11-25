@@ -1,7 +1,3 @@
-Testing requirements 
-====================
-
-
 Testing guidelines
 ==================
 
