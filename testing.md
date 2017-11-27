@@ -58,6 +58,7 @@ Checklist
 
 #### Recommendations:
 
+Best tests:
 - run quick and often
 - use a continious integration like Travis CI and use coverage metrics like codecov 
 - are as simple and readable as they can get, nobody can simplify them further
@@ -66,8 +67,8 @@ Checklist
 - make good use of test class inheritance, parametrisation/randomisation, factories/fixtures, dependency injection, mocks and monkey-patching
 - include just a few integration, end-to-end tests
 - are isolated one from another
-- they have more than 5-7 lines of code 
-- can be reproduced by knowing a test name
+- they have no more than 5-7 lines of code 
+- can be reproduced just by knowing a test name
 
 #### Requirements:
 
