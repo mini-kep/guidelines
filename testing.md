@@ -110,32 +110,25 @@ Tests have to be named properly and clearly tell:
 [expected behavior] is usually [returns_something | raises_something | ...]
 ```
 
-Real Examples:
+#### Examples:
 
-```
-test_get_on_csv_format_arg_returns_expected_csv_string
-```
-Lets break it into parts:
+```test_get_method_on_csv_format_arg_returns_expected_string```
 
 1. Name of the method under test: ```get```
-2. Expected input: ```format_arg```
-3. Expected behavior: ```returns_expectes_csv_string```
+2. Expected context: `format` argument equals `csv`
+3. Expected behavior: returns string that can be compared to expected value
 
-```
-test_as_date_with_invalid_date_fails
-```
-As above lets describe it by parts:
+```test_as_date_on_invalid_string_fails```
 
-1. Name of the method under test: ```_as_date```
-2. Expected input: ```invalid_date```
-3. Expected behavior: ```fails```
+1. Name of the method under test: ```as_date```
+2. Expected input: string with improper formatting supplied
+3. Expected behavior: fails or raises error
 
-Comments:
-  - smaller tests can have simplier naming. Better a ```test_make_date()``` or
-    ```test_to_float_accepts_commented_string``` than no test at all  
-  - regression test (bugfixes) can have names stating what the problem was, eg ```test_CBR_USD_will_not_work_before_1992```
+#### Comments:
+  - smaller tests can have simplier naming, eg ```test_make_date()```
+    - regression test (bugfixes) names state the problem, eg ```test_CBR_USD_will_not_work_before_1992```
   
-Reading:  
+#### Reading:  
   - read about *Arrange-Act-Assert* or *Given-When-Then* for more information
   - [this post](https://stackoverflow.com/questions/155436/unit-test-naming-best-practices) is oftern cited for naming, 
     but discussion has some controversies. 
@@ -143,15 +136,17 @@ Reading:
 Comments format
 ---------------
 
-Imagine there is a class ```CalendarHelper``` with ```shift_ahead(days)```.
+Commenting a test should be done when problems with testing are hard to eliminate during the review. 
 
-When doing commented test (either for learning purposes, or the test is difficult to debug/refactor)
-we should have following comments in test class of method:
+The comments help to do proper test naming + separate setup, call and check + have testing suggestions.
+
+#### Example: 
+
+Imagine there is a class ```CalendarHelper``` with ```shift_ahead(days)```.
 
 ```
    class Test_CalendarHelper():
    
-
      def  test_shift_ahead_on_positive_int_returns_date_instance(self):
          # method under test:  shift_ahead(days)
          # context or arguments: positive integer
