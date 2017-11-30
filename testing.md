@@ -109,7 +109,26 @@ Tests have to be named properly and clearly tell:
 
 [expected behavior] is usually [returns_something | raises_something | ...]
 ```
-   
+
+Real Examples:
+
+```
+test_get_on_csv_format_arg_returns_expected_csv_string
+```
+Lets break it into parts:
+
+1. Name of the method under test: ```get```
+2. Expected input: ```format_arg```
+3. Expected behavior: ```returns_expectes_csv_string```
+
+```
+test_as_date_with_invalid_date_fails
+```
+As above lets describe it by parts:
+
+1. Name of the method under test: ```_as_date```
+2. Expected input: ```invalid_date```
+3. Expected behavior: ```fails```
 
 Comments:
   - smaller tests can have simplier naming. Better a ```test_make_date()``` or
