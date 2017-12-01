@@ -1,7 +1,8 @@
 # Branches
 
-## Branching and PRs
+Creating branches in repo is preferred to branches in forks.
 
+What is a reference branch:
 - if there is a ```dev``` branch,  branch from and PR to it 
 - in absense of ```dev``` branch from ```master```, and *carefully* PR to it.
 
