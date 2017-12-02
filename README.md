@@ -1,4 +1,4 @@
 # Guidelines for testing and developement
 
-- [Testing guidelines and checklist](testing.md)
+- [Testing guidelines](testing.md)
 - [Development issues](development.md)
