@@ -1,8 +1,8 @@
 Test requirements 
 =================
 
-1. Tests in the project use [Travis CI](https://travis-ci.org/mini-kep/) and [codecov](https://codecov.io/gh/mini-kep/),
-   [pytest](https://docs.pytest.org/en/latest/) preferred.
+1. Tests in the project use [Travis CI](https://travis-ci.org/mini-kep/) and [codecov](https://codecov.io/gh/mini-kep/). 
+   [Pytest](https://docs.pytest.org/en/latest/) is preferred over `unittest`.
 2. Tests cover at least all public methods/functions.
 3. Tests are assembled by test class for every single class under test.
 4. Each test has a long descriptive name based on a pattern ```test_<WHAT1>_on_<WHAT2>_<DOES_WHAT>```:
