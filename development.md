@@ -1,3 +1,10 @@
+# Docstrings
+
+Critical parts of the code should have docstrings. 
+When writing a docstring stick to [Google style](https://google.github.io/styleguide/pyguide.html#Comments)
+
+
+
 # Branches
 
 Creating branches in repo is preferred to branches in forks.
@@ -26,7 +33,7 @@ Examples:
 - ```fix-large-dataset-fault-10```
 - ```test-csv-serialialiser-2```
 
-# Github identity suggestions
+# Github identity 
 
 Github avatar and username are very personal things, 
 but it (subjectively) makes life easier, if:
