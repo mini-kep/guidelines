@@ -140,13 +140,9 @@ Tests have to be named properly and clearly tell:
 Comments format
 ---------------
 
-Commenting a test should be done when problems with testing are hard to eliminate during the review. 
+When experiencing problems with tests design, comment your test using format below and submit it for review.
 
-The comments help to do proper test naming + separate setup, call and check + have testing suggestions.
-
-#### Example: 
-
-Imagine there is a class ```CalendarHelper``` with ```shift_ahead(days)```.
+Imagine there is a class ```CalendarHelper``` with ```shift_ahead(days)``` method. A commented test should look like:
 
 ```
    class Test_CalendarHelper():
@@ -170,7 +166,6 @@ Imagine there is a class ```CalendarHelper``` with ```shift_ahead(days)```.
          
 ```
 
-
 To add 
 --------
 - testing is not the best technique to ensure code quality (eg reviews - design)
@@ -182,12 +177,3 @@ Prior discussions
 - parsers testing: <https://github.com/mini-kep/parsers/issues/15>
 - earlier on parsers testing: <https://github.com/mini-kep/parser-rosstat-kep/issues/24>
 - <https://github.com/epogrebnyak/question-kep-unittest>
-
-
-Specialised advice 
-------------------
-I got lots of  professional advice specifically in testing from:
-- [Alexey Kryukov](https://www.upwork.com/fl/alexey) 
-- [Eduard Bagrov - SYP Agency](https://www.upwork.com/freelancers/~01ce161462df65feaa) 
-
-These people are highly recommended to work with on testing issues. 
