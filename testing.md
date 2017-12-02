@@ -13,8 +13,35 @@ Test requirements
 5. Each test addresses one issue and preferably has one assert per test
 6. A tests has clear separation of setup, call of code under test and result check. 
 
-When experiencing problems with tests design, comment your test using [format below]()
-and submit it for review.
+#### Comments format
+
+When experiencing problems with tests design, comment your test using format below and submit it for review.
+
+Imagine there is a class ```CalendarHelper``` with ```shift_ahead(days)``` method. A commented test should look like:
+
+```
+   class Test_CalendarHelper():
+   
+     def  test_shift_ahead_on_positive_int_returns_date_instance(self):
+         # method under test:  shift_ahead(days)
+         # context or arguments: positive integer
+         # expected result or behaviour:  returns datetime.date instance
+
+         # test setup
+         days = 1
+         # call
+         dt = CalendarHelper.shift_ahead(days)
+         # check
+         assert isinstance(dt, datetime.date)
+
+         # suggested extensions:
+         #    - randomise *days*
+         #    - add a test on actual value of method result
+         #    - parametrise days-result pairs
+         
+```
+
+
 
 Testing guidelines
 ==================
@@ -137,37 +164,8 @@ Tests have to be named properly and clearly tell:
   - [this post](https://stackoverflow.com/questions/155436/unit-test-naming-best-practices) is oftern cited for naming, 
     but discussion has some controversies. 
     
-Comments format
----------------
-
-When experiencing problems with tests design, comment your test using format below and submit it for review.
-
-Imagine there is a class ```CalendarHelper``` with ```shift_ahead(days)``` method. A commented test should look like:
-
-```
-   class Test_CalendarHelper():
-   
-     def  test_shift_ahead_on_positive_int_returns_date_instance(self):
-         # method under test:  shift_ahead(days)
-         # context or arguments: positive integer
-         # expected result or behaviour:  returns datetime.date instance
-
-         # test setup
-         days = 1
-         # call
-         dt = CalendarHelper.shift_ahead(days)
-         # check
-         assert isinstance(dt, datetime.date)
-
-         # suggested extensions:
-         #    - randomise *days*
-         #    - add a test on actual value of method result
-         #    - parametrise days-result pairs
-         
-```
-
 To add 
---------
+------
 - testing is not the best technique to ensure code quality (eg reviews - design)
 
 Prior discussions
