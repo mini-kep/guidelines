@@ -1,5 +1,5 @@
-Testing requirements 
-====================
+Test requirements 
+=================
 
 1. Tests in the project use [pytest](https://docs.pytest.org/en/latest/), 
   [Travis CI](https://travis-ci.org/mini-kep/) and [codecov](https://codecov.io/gh/mini-kep/).
@@ -9,10 +9,9 @@ Testing requirements
    - `<WHAT1>` name of function/method name under test, eg `upload`, `upload_method`, `status_property`
    - `<WHAT2>` context/condition or arguments, eg `on_negative_integer`, `on_init`, `on_teardown` 
    - `<DOES_WHAT>` expected result or behaviour, eg `returns_none`, `raises_error` 
-   - regrassion tests / bugfixes are named based on behaviour
+   - regression tests / bugfixes are named based on expected behaviour
 5. Each test addresses one issue and preferably has one assert per test
 6. A tests has clear separation of setup, call of code under test and result check. 
-
 
 When experiencing problems with tests design, comment your test using [format below]()
 and submit it for review.
@@ -72,10 +71,8 @@ Beware of [dirty hybrids](http://blog.stevensanderson.com/2009/08/24/writing-gre
 tests that are stuck in the middle of unit test and integration test. They ususaly require complex setup and 
 complex checks, and very hard to maintain. You should not do such tests, unless you have a special reason.  
 
-Checklist
-----------
-
-#### Recommendations:
+Recommendations
+---------------
 
 Best tests:
 - run quick and often
@@ -88,19 +85,6 @@ Best tests:
 - are isolated one from another
 - they have no more than 5-7 lines of code 
 - can be reproduced just by knowing a test name
-
-#### Requirements:
-
-1. use Travis CI and codecov 
-2. cover at least all public methods/functions
-3. have long names based on a pattern ```test_<WHAT1>_on_<WHAT2>_<DOES_WHAT>```:
-   - `<WHAT1>` name of function/method name under test, eg `upload`, `upload_method`, `status_property`
-   - `<WHAT2>` context/condition or arguments, eg `on_negative_integer`, `on_init`, `on_teardown` 
-   - `<DOES_WHAT>` expected result or behaviour, eg `returns_none`, `raises_error` 
-   - regrassion tests / bugfixes are named based on behaviour
-4. one test addresses one issue and has one assert per test
-5. have clear separation of setup, call of code under test and result check 
-6. assembled by testcases: one testclass class for every single class in code under test
 
 Learning
 --------
