@@ -4,12 +4,14 @@ Testing requirements
 These are requirements for tests in the project.  
 
 Tests:
+
 0. written for [pytest](https://docs.pytest.org/en/latest/)
 1. use [Travis CI](https://travis-ci.org/mini-kep/) and [codecov](https://codecov.io/gh/mini-kep/) 
 2. cover at least all public methods/functions
 3. assembled by test class for every single class under test
 
 Each test:
+
 4. has a long name based on a pattern ```test_<WHAT1>_on_<WHAT2>_<DOES_WHAT>```:
    - `<WHAT1>` name of function/method name under test, eg `upload`, `upload_method`, `status_property`
    - `<WHAT2>` context/condition or arguments, eg `on_negative_integer`, `on_init`, `on_teardown` 
