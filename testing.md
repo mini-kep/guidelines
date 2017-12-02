@@ -1,3 +1,26 @@
+Testing requirements 
+====================
+
+These are requirements for tests in the project.  
+
+Tests:
+0. written for [pytest](https://docs.pytest.org/en/latest/)
+1. use [Travis CI](https://travis-ci.org/mini-kep/) and [codecov](https://codecov.io/gh/mini-kep/) 
+2. cover at least all public methods/functions
+3. assembled by test class for every single class under test
+
+Each test:
+4. has a long name based on a pattern ```test_<WHAT1>_on_<WHAT2>_<DOES_WHAT>```:
+   - `<WHAT1>` name of function/method name under test, eg `upload`, `upload_method`, `status_property`
+   - `<WHAT2>` context/condition or arguments, eg `on_negative_integer`, `on_init`, `on_teardown` 
+   - `<DOES_WHAT>` expected result or behaviour, eg `returns_none`, `raises_error` 
+   - regrassion tests / bugfixes are named based on behaviour
+5. addresses one issue and preferably has one assert per test
+6. has clear separation of setup, call of code under test and result check 
+
+When experiencing problems with tests design, comment your test using [format below]()
+and submit for review.
+
 Testing guidelines
 ==================
 
@@ -75,9 +98,10 @@ Best tests:
 1. use Travis CI and codecov 
 2. cover at least all public methods/functions
 3. have long names based on a pattern ```test_<WHAT1>_on_<WHAT2>_<DOES_WHAT>```:
-   - `<WHAT1>` name of function/method name under test, eg `upload`, `upload_method`, `status_porperty`
-   - `<WHAT2>` context/condition or arguments, `on_negative_integer`, `on_init`, `on_teardown` 
-   - `<DOES_WHAT>` expected result or behaviour `returns_none`, `raises_error` 
+   - `<WHAT1>` name of function/method name under test, eg `upload`, `upload_method`, `status_property`
+   - `<WHAT2>` context/condition or arguments, eg `on_negative_integer`, `on_init`, `on_teardown` 
+   - `<DOES_WHAT>` expected result or behaviour, eg `returns_none`, `raises_error` 
+   - regrassion tests / bugfixes are named based on behaviour
 4. one test addresses one issue and has one assert per test
 5. have clear separation of setup, call of code under test and result check 
 6. assembled by testcases: one testclass class for every single class in code under test
