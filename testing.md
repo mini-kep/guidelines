@@ -1,24 +1,20 @@
 Testing requirements 
 ====================
 
-These are requirements for tests in the project.  
-
-Tests:
-
-0. written for [pytest](https://docs.pytest.org/en/latest/)
-1. use [Travis CI](https://travis-ci.org/mini-kep/) and [codecov](https://codecov.io/gh/mini-kep/) 
-2. cover at least all public methods/functions
-3. assembled by test class for every single class under test
+- Tests in the project use [pytest](https://docs.pytest.org/en/latest/), 
+  [Travis CI](https://travis-ci.org/mini-kep/) and [codecov](https://codecov.io/gh/mini-kep/).
+- Tests cover at least all public methods/functions.
+- Tests are assembled by test class for every single class under test.
 
 Each test:
 
-4. has a long name based on a pattern ```test_<WHAT1>_on_<WHAT2>_<DOES_WHAT>```:
+1. has a long descriptive name based on a pattern ```test_<WHAT1>_on_<WHAT2>_<DOES_WHAT>```:
    - `<WHAT1>` name of function/method name under test, eg `upload`, `upload_method`, `status_property`
    - `<WHAT2>` context/condition or arguments, eg `on_negative_integer`, `on_init`, `on_teardown` 
    - `<DOES_WHAT>` expected result or behaviour, eg `returns_none`, `raises_error` 
    - regrassion tests / bugfixes are named based on behaviour
-5. addresses one issue and preferably has one assert per test
-6. has clear separation of setup, call of code under test and result check 
+2. addresses one issue and preferably has one assert per test
+3. has clear separation of setup, call of code under test and result check 
 
 When experiencing problems with tests design, comment your test using [format below]()
 and submit for review.
