@@ -16,7 +16,7 @@ When constrained on time:
 2. write a part of docstring which is has most information (usually `Args` section)
 3. finish a docstring after review
 
-# Branches
+# Branches 
 
 - Creating branches in repo is preferred to branches in forks.
 - Reference branch  is `dev` - branch out and make PRs to it. 
