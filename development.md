@@ -1,19 +1,20 @@
-# Docstrings
+# 1. Docstrings
 
-Critical parts of the code should have docstrings. 
-When writing a docstring stick to [Google style](https://google.github.io/styleguide/pyguide.html#Comments)
+Following parts of code should have docstrings:
+- critical parts of the code that do something really important
+- parts of the code that are exposed to end-user
 
+When writing a docstring stick to [Google style](https://google.github.io/styleguide/pyguide.html#Comments).
 
+When constrained on time:
+1. write one liner docstring
+2. write a part of docstring which is has most information (usually `Args` section)
+3. finish a docstring after review
 
-# Branches
+# 2. Branches
 
-Creating branches in repo is preferred to branches in forks.
-
-What is a reference branch:
-- if there is a ```dev``` branch,  branch from and PR to it 
-- in absense of ```dev``` branch from ```master```, and *carefully* PR to it.
-
-Note that ```master``` may be deployed to heroku.
+- Creating branches in repo is preferred to branches in forks.
+- Reference branch  is `dev` - branch out and make PRs to it. 
 
 ## Branch naming
 
@@ -25,7 +26,7 @@ Note that ```master``` may be deployed to heroku.
 3. Postfix with issue number 
 4. Use `-` to separate 
 
-Pattern: ```dev-something-somehting-123```
+Pattern: ```dev-something-something-10```
 
 Examples:
 
@@ -33,7 +34,7 @@ Examples:
 - ```fix-large-dataset-fault-10```
 - ```test-csv-serialialiser-2```
 
-# Github identity 
+# 3. Github identity 
 
 Github avatar and username are very personal things, 
 but it (subjectively) makes life easier, if:
