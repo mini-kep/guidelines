@@ -1,4 +1,9 @@
-# 1. Docstrings
+# Testing
+
+  See [testing requirements and guidelines](https://github.com/mini-kep/guidelines/blob/master/testing.md)
+
+
+# Docstrings
 
 Following parts of code should have docstrings:
 - critical parts of the code that do something really important
@@ -11,7 +16,7 @@ When constrained on time:
 2. write a part of docstring which is has most information (usually `Args` section)
 3. finish a docstring after review
 
-# 2. Branches
+# Branches
 
 - Creating branches in repo is preferred to branches in forks.
 - Reference branch  is `dev` - branch out and make PRs to it. 
@@ -34,7 +39,7 @@ Examples:
 - ```fix-large-dataset-fault-10```
 - ```test-csv-serialialiser-2```
 
-# 3. Github identity 
+# Github identity 
 
 Github avatar and username are very personal things, 
 but it (subjectively) makes life easier, if:
