@@ -1,6 +1,6 @@
 # Testing
 
-  See [testing requirements and guidelines](https://github.com/mini-kep/guidelines/blob/master/testing.md)
+  See [testing requirements and guidelines](https://github.com/mini-kep/guidelines/blob/master/testing.md).
 
 
 # Docstrings
